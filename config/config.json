@@ -13,6 +13,22 @@
     "host": "localhost",
     "dialect": "postgres"
   },
+  "docker": {
+    "username": "postgres",
+    "password": "Maulana5000",
+    "database": "docker-homework",
+    "host": "host.docker.internal",
+    "dialect": "postgres",
+    "port": 5439
+  },
+  "docker-test": {
+    "username": "postgres",
+    "password": "Maulana5000",
+    "database": "docker-homework-testing",
+    "host": "host.docker.internal",
+    "dialect": "postgres",
+    "port": 5439
+  },
   "production": {
     "username": "root",
     "password": null,

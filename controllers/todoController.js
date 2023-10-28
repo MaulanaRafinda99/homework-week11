@@ -69,13 +69,13 @@ class TodoController {
 
             await foundTodo.update ({
                 title: title || foundTodo.title,
-                week: title || foundTodo.week,
+                week: week || foundTodo.week,
                 task: task || foundTodo.task
             })
 
             res.status(200).json({
                 message: "Todo Update Succesfully",
-                date: foundTodo
+                data: foundTodo
             })
         } catch (err) {
             next(err)
