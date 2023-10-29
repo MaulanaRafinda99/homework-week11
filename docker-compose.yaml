@@ -11,11 +11,11 @@ services:
     networks:
       - app-tier
     ports:
-      - "5439:5439"
+      - "5432:5432"
     environment:
       - POSTGRES_USER = postgres
       - POSTGRES_PASSWORD = Maulana5000
-      - PGPORT= 5439
+      - PGPORT= 5432
   app:
     restart: on-failure
     build: .
@@ -24,6 +24,6 @@ services:
     depends_on:
       - postgres
     ports:
-      - "8080:8080"
+      - "3000:3000"
     environment:
       - NODE_ENV=docker 
