@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "cross-env NONE_ENV=test && jest --detectOpenHandles --runInBand --forceExit --watchAll --coverage --verbose",
-    "start": "cross-env NODE_ENV=development && nodemon ./bin/www.js",
+    "start": "cross-env NODE_ENV=development && node ./bin/www.js",
     "start-docker": "NODE_ENV=docker && node ./bin/www.js",
     "test-docker": "NONE_ENV=dokcer-test && jest --detectOpenHandles --runInBand --forceExit --watchAll --coverage --verbose"
   },
